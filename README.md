@@ -47,4 +47,11 @@ BYOL relies on two neural networks, referred to as online and target networks, t
   # Define the backbone
   backbone = models.resnet34(pretrained=True)
   hidden_layer_pixel = 'layer4'
-  '''
+  ```
+  2. Run train.py
+
+  ## Acknowledgement
+<!--ts-->
+* [open-mmlab/mmselfsup](https://github.com/open-mmlab/mmselfsup)
+* [lucidrains/pixel-level-contrastive-learning](https://github.com/lucidrains/pixel-level-contrastive-learning)
+<!--te-->
