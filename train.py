@@ -11,8 +11,7 @@ num_workers = 32
 using_pixpro = True # True if using SSL for using backbone to implement segmentation tasks,
                     # False if using SSL for using backbone to implement classification tasks,
 num_of_gpus = torch.cuda.device_count()
-###########################################################################
-
+image_folder_path = r'image_folder_path'
 # Define the backbone
 backbone = models.resnet34(pretrained=True)
 hidden_layer_pixel = 'layer4'
@@ -23,7 +22,7 @@ hidden_layer_pixel = 'layer4'
 * You can use the following dataloader to train on an Image folder
 '''
 
-image_folder_path = r'C:\Users\asus\Desktop\lane\tusimple\seq - Copy'
+
 dataset = BYOLDataloader(data_path=image_folder_path)
 
 trainloader = torch.utils.data.DataLoader(dataset,
