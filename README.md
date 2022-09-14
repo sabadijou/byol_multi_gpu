@@ -1,7 +1,8 @@
-# BYOL: Bootstrap Your Own Latent - Multi GPUs Support
+# BYOL: Bootstrap Your Own Latent - Multi GPU Support
 
 PyTorch implementation of [BYOL](https://arxiv.org/abs/2006.07733): a new approach to self-supervised image representation learning.
-
+1. this repository enable standard multi GPU training 
+1. Enables **multi-GPU** training in PyTorch Lightning.
 2. (Optionally) Automatically trains a linear classifier, and logs its accuracy after each epoch.
 3. All functions and classes are fully type annotated for better usability/hackability with Python>=3.6.
 
