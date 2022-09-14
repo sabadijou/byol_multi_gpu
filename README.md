@@ -37,14 +37,14 @@ BYOL relies on two neural networks, referred to as online and target networks, t
     ```
   ## Get started
   1. Simply open train.py in a python editor and customize the hyperparameters section.
-  '''
+  ```Shell
   batch_size = 32
-num_workers = 32
-using_pixpro = True # True if using SSL for using backbone to implement segmentation tasks,
-                    # False if using SSL for using backbone to implement classification tasks,
-num_of_gpus = torch.cuda.device_count()
-image_folder_path = r'image_folder_path'
-# Define the backbone
-backbone = models.resnet34(pretrained=True)
-hidden_layer_pixel = 'layer4'
+  num_workers = 32
+  using_pixpro = True   # True if using SSL for using backbone to implement segmentation tasks,
+                        # False if using SSL for using backbone to implement classification tasks,
+  num_of_gpus = torch.cuda.device_count()
+  image_folder_path = r'image_folder_path'
+  # Define the backbone
+  backbone = models.resnet34(pretrained=True)
+  hidden_layer_pixel = 'layer4'
   '''
