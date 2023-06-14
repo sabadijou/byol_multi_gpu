@@ -60,3 +60,5 @@ trainer = pl.Trainer(accelerator="gpu",
                      sync_batchnorm=True,
                      max_epochs=250)
 trainer.fit(model, trainloader)
+
+print('Training Finished')
